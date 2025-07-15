@@ -51,7 +51,7 @@ Hello World      Tasks    Files    Users
 
 ### Deployment
 ```bash
-git clone https://github.com/yourusername/aws-serverless-task-api.git
+git clone https://github.com/KeithMV/aws-serverless-task-api.git
 cd aws-serverless-task-api
 terraform init
 terraform apply
@@ -98,10 +98,10 @@ Pay-per-use: No idle server costs
 📄 License
 MIT License - see LICENSE file for details.
 👨‍💻 Author
-[Your Name]
+Keith Vose
 
-Email: your.email@example.com
-LinkedIn: Your Profile
+Email: kmvose@gmail.com
+
 
 
 ⭐ Star this repository if you found it helpful!
