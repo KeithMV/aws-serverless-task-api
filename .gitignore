@@ -1,0 +1,30 @@
+# Terraform state files (contain sensitive data)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform working directory
+.terraform/
+.terraform.lock.hcl
+
+# Lambda deployment packages
+*.zip
+
+# AWS credentials (never commit these!)
+.aws/
+*.pem
+*.key
+
+# Environment files
+.env
+.env.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
