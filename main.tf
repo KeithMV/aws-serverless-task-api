@@ -36,9 +36,14 @@ provider "aws" {
 
 # Variables for customization
 variable "project_name" {
-  description = "Name for this project (make it unique)"
+  description = "IMPORTANT: Change this to make it unique! (e.g., yourname-serverless-api)"
   type        = string
-  default     = "my-hello-api"
+  default     = "serverless-api-CHANGEME"
+  
+  validation {
+    condition     = var.project_name != "serverless-api-CHANGEME"
+    error_message = "You must change the project_name variable to something unique before deploying!"
+  }
 }
 
 # ========================================
