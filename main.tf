@@ -42,7 +42,12 @@ variable "project_name" {
   
   validation {
     condition     = var.project_name != "serverless-api-CHANGEME"
-    error_message = "You must change the project_name variable to something unique before deploying!"
+    error_message = "❌ You must change the project_name variable to something unique before deploying! Edit main.tf and change the default value."
+  }
+  
+  validation {
+    condition     = can(regex("^[a-z0-9-]+$", var.project_name))
+    error_message = "Project name must contain only lowercase letters, numbers, and hyphens."
   }
 }
 

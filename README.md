@@ -45,9 +45,23 @@ Hello World      Tasks    Files    Users
 
 ## 🚀 Quick Start
 
+
 ### Prerequisites
 - AWS Account with CLI configured
-- Terraform installed
+- Terraform >= 1.0 installed
+- Basic understanding of serverless architecture
+
+### ⚠️ IMPORTANT: Before You Deploy
+
+#### 1. Make Your Project Name Unique
+```bash
+# Edit main.tf and find this line:
+default = "serverless-api-CHANGEME"
+
+# Change it to something unique like:
+default = "yourname-serverless-2024"
+default = "john-task-api"
+default = "company-serverless-demo"
 
 ### Deployment
 ```bash
